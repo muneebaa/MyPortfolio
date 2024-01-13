@@ -11,7 +11,7 @@ const Home = () => {
             Hello I’am <span className="text_bold">Muneeba Dilawaze.</span>
           </h1>
           <h1>
-            <span className="text_bold">Frontend</span>{" "}
+            <span className="text_bold">Full Stack</span>{" "}
             <span className="text_outline">Developer</span>
           </h1>
           <h1>
