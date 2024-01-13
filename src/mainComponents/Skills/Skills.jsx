@@ -1,13 +1,10 @@
 import React from "react";
-import Card from "../../commonComponents/Card";
+import SkillCard from "../../commonComponents/SkillCard";
 import htmlIcon from "../../assets/htmlIcon.png";
-import htmlIconOutlined from "../../assets/htmlIconOutlined.png";
-import JsIcon from "../../assets/JsIcon.png";
 import tsIcon from "../../assets/tsIcon.png";
 import JsIconWhite from "../../assets/JsIconWhite.png";
 import nextJsIcon from "../../assets/nextJsIcon.png";
 import gitIcon from "../../assets/gitIcon.png";
-import reactNativeIcon from "../../assets/reactNativeIcon.png";
 import sassIcon from "../../assets/sassIcon.png";
 import reactIcon from "../../assets/reactIconWhite.png";
 import cssIcon from "../../assets/cssIcon.png";
@@ -24,18 +21,18 @@ const Skills = () => {
 
         <div className="skills_wrapper">
           <div className="skills_cards">
-            <Card image={htmlIcon} text={"Html"} />
-            {/* <Card image={htmlIconOutlined} text={"Html"} /> */}
-            <Card image={JsIconWhite} text={"Javascript"} isDark={true} />
-            {/* <Card image={JsIconOutlined} text={"Javascript"} /> */}
-            <Card image={cssIcon} text={"Css3"} />
-            <Card image={sassIcon} text={"Sass/Scss"} />
+            <SkillCard image={htmlIcon} text={"Html"} />
+            {/* <SkillCard image={htmlIconOutlined} text={"Html"} /> */}
+            <SkillCard image={JsIconWhite} text={"Javascript"} isDark={true} />
+            {/* <SkillCard image={JsIconOutlined} text={"Javascript"} /> */}
+            <SkillCard image={cssIcon} text={"Css3"} />
+            <SkillCard image={sassIcon} text={"Sass/Scss"} />
           </div>
           <div className="skills_cards">
-            <Card image={gitIcon} text={"Git"} />
-            <Card image={tsIcon} text={"Typescript"} />
-            <Card image={nextJsIcon} text={"Next Js"} />
-            <Card image={reactIcon} text={"React Js"} isDark={true} />
+            <SkillCard image={gitIcon} text={"Git"} />
+            <SkillCard image={tsIcon} text={"Typescript"} />
+            <SkillCard image={nextJsIcon} text={"Next Js"} />
+            <SkillCard image={reactIcon} text={"React Js"} isDark={true} />
           </div>
         </div>
       </div>
