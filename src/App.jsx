@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AboutMe, Contact, Project, Skill } from "./mainComponents";
+import { AboutMe, Contact, Project, Skill, Home } from "./mainComponents";
 import Navbar from "./commonComponents/Navbar";
 import MyExperience from "./mainComponents/MyExperience";
 
@@ -9,11 +9,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <AboutMe />
+      <Home />
       <Skill />
       <MyExperience />
-      <Contact />
+      <AboutMe />
       <Project />
+      <Contact />
     </>
   );
 }
