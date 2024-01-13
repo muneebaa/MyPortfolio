@@ -1,11 +1,11 @@
 .experience_main {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--main);
   color: var(--primary);
+  padding: 40px 0;
 }
 
-.experience_main h1 {
+.experience_main .experience_main_heading {
   font-weight: 400;
-  padding-top: 20px;
   text-align: center;
 }
