@@ -1,0 +1,49 @@
+.experience_card_main {
+  border: 2px solid var(--primary);
+  padding: 30px 24px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.experience_card_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience_card_company {
+  display: flex;
+  align-items: center;
+}
+
+.card_company_img {
+  width: 32px;
+  height: 32px;
+}
+
+.card_company_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.card_company_title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.experience_card_dates_main {
+  display: flex;
+  align-items: center;
+}
+
+.experience_card_dates_main img {
+  margin-left: 10px;
+}
+
+.experience_card_description {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 20px;
+  line-height: 30px;
+}
