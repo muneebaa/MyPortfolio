@@ -1,0 +1,37 @@
+.main_nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.nav_logo_main,.nav_links_main,.nav_resume{
+    display: flex;
+    align-items: center;
+}
+
+.nav_logo_main p{
+    font-weight: 600;
+}
+
+.nav_links_main p{
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.nav_resume{
+    color: white;
+    background-color: var(--main);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav_resume_icon{
+    width: 15px;
+        height: 15px;
+        margin-left: 10px
+}
+
+.nav_resume_icon img {
+    width: 100%;
+    height: 100%;
+}

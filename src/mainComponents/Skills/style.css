@@ -1,0 +1,31 @@
+.skills_main {
+  height: 100vh;
+}
+
+.skills_inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills_inner h1 {
+  font-weight: 400;
+}
+
+.skills_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  flex-wrap: wrap;
+  height: calc(100vh - 50px);
+}
+
+.skills_cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+  /* border: 2px solid green; */
+}
