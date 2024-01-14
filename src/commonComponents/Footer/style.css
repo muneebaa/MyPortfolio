@@ -1,0 +1,24 @@
+.main_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: black;
+  color: #fff;
+}
+
+.footer_logo_main,
+.footer_links_main,
+.footer_resume {
+  display: flex;
+  align-items: center;
+}
+
+.footer_logo_main p {
+  font-weight: 600;
+}
+
+.footer_links_main p {
+  padding: 0 10px;
+  font-weight: 600;
+}
