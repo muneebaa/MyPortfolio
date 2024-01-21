@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../../assets/Logo.svg";
 import downloadIcon from "../../assets/downloadIcon.svg";
 import { HashLink as Link } from "react-router-hash-link";
-
+import cvPDF from "../../assets/cv.pdf";
 import "./style.css";
 
 const Navbar = () => {
@@ -21,13 +21,14 @@ const Navbar = () => {
         <p>Project</p>
         <p>Contact Me</p>
       </div>
-
-      <div className="nav_resume">
-        <p>Resume</p>
-        <div className="nav_resume_icon">
-          <img src={downloadIcon} />
+      <a href={cvPDF} download="MuneebaDilawazeResume" target="_blank">
+        <div className="nav_resume">
+          <p>Resume</p>
+          <div className="nav_resume_icon">
+            <img src={downloadIcon} />
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   );
 };
