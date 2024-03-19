@@ -4,7 +4,7 @@ import LogoWhite from "../../assets/logoWhite.svg";
 import downloadIcon from "../../assets/download_white.png";
 import downloadDarkIcon from "../../assets/download-black.png";
 import { HashLink as Link } from "react-router-hash-link";
-
+import cvPDF from "../../assets/cv.pdf";
 import "./style.css";
 
 const Navbar = () => {
@@ -75,10 +75,12 @@ const Navbar = () => {
           color: scrolling ? "black" : "white",
         }}
       >
+        {/* <a href={cvPDF} download="MuneebaDilawazeResume" target="_blank"> */}
         <p>Resume</p>
         <div className="nav_resume_icon">
           <img src={scrolling ? downloadDarkIcon : downloadIcon} />
         </div>
+        {/* </a> */}
       </div>
     </div>
   );

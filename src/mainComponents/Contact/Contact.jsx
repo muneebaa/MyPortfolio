@@ -40,6 +40,11 @@ const Contact = () => {
           (result) => {
             setLoading(false);
             notifySuccess();
+            setData({
+              from_name: "",
+              from_email: "",
+              message: "",
+            });
             console.log(result.text);
           },
           (error) => {
@@ -75,6 +80,7 @@ const Contact = () => {
             <input
               type="text"
               name="from_name"
+              value={data.from_name}
               placeholder="John Doe"
               onChange={(e) =>
                 setData((prevState) => ({
@@ -86,6 +92,7 @@ const Contact = () => {
             <label>Email</label>
             <input
               type="email"
+              value={data.from_email}
               name="from_email"
               onChange={(e) =>
                 setData((prevState) => ({
@@ -99,6 +106,7 @@ const Contact = () => {
             <textarea
               name="message"
               placeholder="How can I help?*"
+              value={data.message}
               onChange={(e) =>
                 setData((prevState) => ({
                   ...prevState,
