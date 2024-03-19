@@ -4,7 +4,7 @@ import "./style.css";
 
 const Home = () => {
   return (
-    <div className="home_main spacing_main" id="">
+    <div className="home_main spacing_main" id="home">
       <div className="home_section1">
         <div className="home_section1_head">
           <h1>

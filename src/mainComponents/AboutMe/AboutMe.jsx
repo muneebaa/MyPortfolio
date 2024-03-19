@@ -4,7 +4,7 @@ import "./style.css";
 
 const AboutMe = () => {
   return (
-    <div className="about_main spacing_main" id="">
+    <div className="about_main spacing_main" id="about">
       <div className="about_section1">
         <img src={girlImg} />
       </div>

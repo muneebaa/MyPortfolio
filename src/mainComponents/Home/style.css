@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   height: calc(100vh - 60px);
+  padding-top: 90px;
 }
 
 .home_section1,
@@ -25,7 +26,30 @@
   line-height: 24px; /* 150% */
 }
 
+/* .home_section2 img {
+  height: 100%;
+  width: 100%;
+} */
+
 .home_section2 img {
   height: 100%;
   width: 100%;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
 }

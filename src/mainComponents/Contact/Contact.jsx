@@ -57,7 +57,7 @@ const Contact = () => {
     console.log("data", data);
   }, [data]);
   return (
-    <div>
+    <div id="contact">
       <div className="contact_main spacing_main">
         <h1 className="contact_main_heading">
           Get in <span className="text_bold">Touch with me</span>

@@ -38,7 +38,7 @@ const projectsArr = [
 
 const Project = () => {
   return (
-    <div className="project_main spacing_main">
+    <div className="project_main spacing_main" id="project">
       <h1 className="project_main_heading">
         My <span className="text_bold">Projects</span>
       </h1>

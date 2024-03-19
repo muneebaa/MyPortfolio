@@ -37,7 +37,8 @@ a:hover {
 }
 
 body,
-html {
+html,
+* {
   box-sizing: border-box;
 }
 

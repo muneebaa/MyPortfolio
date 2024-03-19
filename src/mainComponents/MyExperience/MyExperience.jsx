@@ -7,7 +7,7 @@ import "./style.css";
 
 const MyExperience = () => {
   return (
-    <div className="experience_main spacing_main">
+    <div className="experience_main spacing_main" id="experience">
       <h1 className="experience_main_heading">
         My <span className="text_bold">Experience</span>
       </h1>

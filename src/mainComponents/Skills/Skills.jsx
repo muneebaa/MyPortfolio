@@ -13,7 +13,7 @@ import "./style.css";
 
 const Skills = () => {
   return (
-    <div className="skills_main spacing_main">
+    <div className="skills_main spacing_main" id="skills">
       <div className="skills_inner">
         <h1>
           My <span className="text_bold">Skills</span>
