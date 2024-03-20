@@ -25,7 +25,22 @@ html {
   --accent: #71717a;
   --familyMain: "Sora", sans-serif;
   --familyAccent: "Londrina Outline", sans-serif;
+  --fontXXL: 46px;
+  --fontXL: 30px;
+  --fontM: 24px;
+  --fontS: 20px;
+  --fontXS: 14px;
 }
+
+/* @media only screen and (max-width: 900px) {
+  :root {
+    --fontXXL: 36px;
+    --fontXL: 20px;
+    --fontM: 14px;
+    --fontS: 10px;
+    --fontXS: 8px;
+  }
+} */
 
 a {
   font-weight: 500;
@@ -55,9 +70,58 @@ body {
   letter-spacing: 7px;
 }
 
+@media only screen and (max-width: 450px) {
+  .text_bold {
+    font-size: 22px;
+  }
+
+  .text_outline {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .text_bold {
+    font-size: 18px;
+  }
+
+  .text_outline {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .text_bold {
+    font-size: 16px;
+  }
+
+  .text_outline {
+    font-size: 16px;
+  }
+}
+
 .spacing_main {
   padding-left: 80px;
   padding-right: 80px;
+}
+
+@media only screen and (max-width: 850px) {
+  .spacing_main {
+    padding-left: 40px;
+    padding-right: 40px;
+    /* border: 2px solid red; */
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .spacing_main {
+    padding-left: 20px;
+    padding-right: 20px;
+    /* border: 2px solid red; */
+  }
+
+  .nav_resume {
+    width: 100px;
+  }
 }
 
 .hidden_div {

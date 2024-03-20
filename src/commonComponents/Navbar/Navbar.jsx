@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Logo from "../../assets/Logo.svg";
 import LogoWhite from "../../assets/logoWhite.svg";
 import downloadIcon from "../../assets/download_white.png";
+import hamburgerWhite from "../../assets/hamWhite.png";
+import hamburgerBlack from "../../assets/hamBlack.png";
 import downloadDarkIcon from "../../assets/download-black.png";
 import { HashLink as Link } from "react-router-hash-link";
 import cvPDF from "../../assets/cv.pdf";
@@ -83,6 +85,10 @@ const Navbar = () => {
           <img src={scrolling ? downloadDarkIcon : downloadIcon} />
         </div>
       </a>
+
+      <div className="nav_ham">
+        <img src={scrolling ? hamburgerWhite : hamburgerBlack} />
+      </div>
     </div>
   );
 };
