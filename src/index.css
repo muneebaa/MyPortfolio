@@ -60,6 +60,13 @@ body {
   padding-right: 80px;
 }
 
+.hidden_div {
+  color: transpaent;
+  height: 50px;
+  width: 200px;
+  border: 2px solid red;
+}
+
 /* button {
   border-radius: 8px;
   border: 1px solid transparent;
