@@ -68,20 +68,21 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div
+      <a
+        href={cvPDF}
+        download="MuneebaDilawazeResume"
+        target="_blank"
         className="nav_resume"
         style={{
           backgroundColor: scrolling ? "white" : "black",
           color: scrolling ? "black" : "white",
         }}
       >
-        {/* <a href={cvPDF} download="MuneebaDilawazeResume" target="_blank"> */}
         <p>Resume</p>
         <div className="nav_resume_icon">
           <img src={scrolling ? downloadDarkIcon : downloadIcon} />
         </div>
-        {/* </a> */}
-      </div>
+      </a>
     </div>
   );
 };
