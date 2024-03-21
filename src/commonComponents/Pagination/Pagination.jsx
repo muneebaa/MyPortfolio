@@ -30,12 +30,17 @@ const Pagination = ({ totalPages, onPageChange }) => {
 
     for (let i = 1; i <= totalPages; i++) {
       pageNumbers.push(
-        <p
-          key={i}
-          className={`${currentPage === i ? "active" : null} pagination_number`}
-        >
-          <div onClick={() => handleClick(i)}>{i}</div>
-        </p>
+        <Link to="#project" smooth>
+          <p
+            key={i}
+            className={`${
+              currentPage === i ? "active" : null
+            } pagination_number`}
+            onClick={() => handleClick(i)}
+          >
+            <div>{i}</div>
+          </p>
+        </Link>
       );
     }
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Pagination from "../../commonComponents/Pagination";
 import project1 from "../../assets/project4.png";
 import project2 from "../../assets/project5.png";
@@ -107,10 +107,23 @@ const projectsArr = [
 
 const Project = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div id="project">
@@ -126,23 +139,37 @@ const Project = () => {
               <div className="project_all_projects">
                 <div
                   className="all_projects_image"
-                  style={{
-                    order: item.type === "rtl" ? 1 : 2,
-                    width: "30%",
-                    height: item.mobile ? "400px" : "200px",
-                  }}
+                  style={
+                    windowWidth <= 1000
+                      ? {
+                          order: 1,
+                          height: item.mobile ? "400px" : "200px",
+                        }
+                      : {
+                          order: item.type === "rtl" ? 1 : 2,
+                          height: item.mobile ? "400px" : "200px",
+                        }
+                  }
                 >
                   <img src={item.image} width={"100%"} height={"100%"} />
                 </div>
                 <div
                   className="project_all_text"
-                  style={{ order: item.type === "rtl" ? 2 : 1 }}
+                  style={
+                    windowWidth <= 1000
+                      ? {
+                          order: 2,
+                        }
+                      : {
+                          order: item.type === "rtl" ? 2 : 1,
+                        }
+                  }
                 >
                   <h1 className="project_all_text_serial">
                     {item.serialNumber}
                   </h1>
                   <h2 className="project_all_text_title">{item.title}</h2>
-                  <p>{item.description}</p>
+                  <p className="project_desc"> {item.description}</p>
                   <a href={item.link} target="_blank">
                     <img src={openIcon} width={"20px"} height={"20px"} />
                   </a>
