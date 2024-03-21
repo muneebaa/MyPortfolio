@@ -79,7 +79,8 @@
   .nav_logo_text {
     font-size: 14px;
   }
-  .links_non_scroll a {
+  .links_non_scroll a,
+  .links_scroll a {
     font-size: 12px;
   }
   .nav_resume p {
@@ -91,7 +92,8 @@
   .nav_logo_text {
     font-size: 12px;
   }
-  .links_non_scroll a {
+  .links_non_scroll a,
+  .links_scroll a {
     font-size: 10px;
   }
   .nav_resume p {
@@ -103,7 +105,8 @@
   .nav_logo_text {
     font-size: 12px;
   }
-  .links_non_scroll a {
+  .links_non_scroll a,
+  .links_scroll a {
     font-size: 10px;
   }
   .nav_resume p {

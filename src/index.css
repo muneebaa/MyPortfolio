@@ -112,11 +112,17 @@ body {
   }
 }
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 610px) {
   .spacing_main {
     padding-left: 20px;
     padding-right: 20px;
-    /* border: 2px solid red; */
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .spacing_main {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .nav_resume {
@@ -125,10 +131,9 @@ body {
 }
 
 .hidden_div {
-  color: transpaent;
   height: 50px;
   width: 200px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 /* button {

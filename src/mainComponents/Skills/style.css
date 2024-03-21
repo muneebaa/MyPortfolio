@@ -1,6 +1,5 @@
 .skills_main {
-  height: 100vh;
-  margin-top: 60px;
+  margin: 60px 0;
 }
 
 .skills_inner {
@@ -18,9 +17,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 2px solid red; */
   flex-wrap: wrap;
-  height: calc(100vh - 50px);
+  margin-top: 70px;
 }
 
 .skills_cards {
@@ -28,5 +26,28 @@
   width: 100%;
   justify-content: space-between;
   margin-top: 20px;
-  /* border: 2px solid green; */
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1000px) {
+  .skills_cards {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .skills_cards {
+    width: 80%;
+  }
+
+  .skills_wrapper {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .skills_cards {
+    width: 100%;
+    justify-content: space-between;
+  }
 }

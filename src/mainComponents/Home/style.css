@@ -1,7 +1,8 @@
 .home_main {
   display: flex;
   align-items: center;
-  height: calc(100vh - 60px);
+  justify-content: center;
+  height: calc(100vh - 5px);
   padding-top: 90px;
 }
 
@@ -25,11 +26,6 @@
   margin-top: 20px;
   line-height: 24px; /* 150% */
 }
-
-/* .home_section2 img {
-  height: 100%;
-  width: 100%;
-} */
 
 .home_section2 img {
   height: 100%;
@@ -91,6 +87,9 @@
 @media only screen and (max-width: 415px) {
   h1 {
     font-size: 18px;
+  }
+  .home_main {
+    height: auto;
   }
 }
 
