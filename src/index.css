@@ -121,8 +121,8 @@ body {
 
 @media only screen and (max-width: 570px) {
   .spacing_main {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .nav_resume {
