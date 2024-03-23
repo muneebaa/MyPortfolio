@@ -59,12 +59,10 @@
   color: var(--primary);
   font-weight: bolder;
   font-family: "Sora", sans-serif;
-  /* width: 200px; */
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin: 0 auto; */
   margin-top: 20px;
 }
 
@@ -76,4 +74,19 @@
 
 .contact_section2 h3 {
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact_main_wrapper {
+    flex-direction: column;
+  }
+  .contact_section1,
+  .contact_section2 {
+    width: 100%;
+    padding: 0 0px;
+  }
+
+  .contact_section1 label {
+    margin-top: 20px;
+  }
 }
