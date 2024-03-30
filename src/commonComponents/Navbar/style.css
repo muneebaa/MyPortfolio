@@ -41,18 +41,29 @@
   color: black;
 }
 
-.nav_resume {
-  padding: 10px 20px;
+.nav_ham_main {
+  display: none;
+}
+
+.nav_resume,
+.nav_ham_resume {
+  padding: 10px 15px;
   border-radius: 5px;
 }
 
-.nav_resume_icon {
+.nav_ham_resume {
+  margin-right: 20px;
+  display: none;
+}
+.nav_resume_icon,
+.nav_ham_resume_icon {
   width: 20px;
   height: 20px;
   margin-left: 10px;
 }
 
-.nav_resume_icon img {
+.nav_resume_icon img,
+.nav_ham_resume_icon img {
   width: 100%;
   height: 100%;
 }
@@ -75,6 +86,80 @@
   height: 100%;
 }
 
+.nav_reponsive {
+  border: 2px solid darkred;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  height: 200px;
+  width: 100%;
+  background-color: aqua;
+  z-index: 2;
+  margin-top: 65px;
+  left: 0;
+}
+
+.nav_reponsive p {
+  color: black;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* background-color: rgb(0, 0, 0); */
+  background-color: rgba(0, 0, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 0 20px;
+}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.overlay a {
+  margin: 25px 0;
+  padding: 10px 0;
+  font-size: 30px;
+  font-size: 20px;
+
+  display: block;
+  transition: 0.3s;
+  color: white;
+  text-align: left;
+  border-bottom: 1px solid white;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .overlay_cross {
+  /* 
+  font-size: 60px; */
+  position: absolute;
+  /* left: 10; */
+  right: 20px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  /* border: 2px solid red; */
+  /* margin: 0 auto; */
+}
+
+/* @media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+} */
 @media only screen and (max-width: 1050px) {
   .nav_logo_text {
     font-size: 14px;
@@ -114,6 +199,14 @@
   }
   .nav_links_main {
     display: none;
+  }
+  .nav_ham_resume {
+    display: flex;
+    align-items: center;
+  }
+  .nav_ham_main {
+    display: flex;
+    align-items: center;
   }
   .nav_resume {
     display: none;
