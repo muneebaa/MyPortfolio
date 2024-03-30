@@ -3,6 +3,7 @@
   background-color: var(--main);
   color: var(--primary);
   padding: 40px 0;
+  position: relative;
 }
 
 .project_main .project_main_heading {
@@ -22,7 +23,7 @@
 }
 
 .all_projects_image {
-  width: 30%;
+  width: 40%;
 }
 
 .all_projects_image img {
@@ -30,7 +31,7 @@
 }
 
 .project_all_text {
-  width: 65%;
+  width: 55%;
 }
 
 .project_all_text_serial {
@@ -52,6 +53,11 @@
   color: #71717a;
   line-height: 24px;
 }
+/* .project_pagination {
+  border: 2px solid red;
+  position: absolute;
+  bottom: 0;
+} */
 
 @media only screen and (max-width: 1200px) {
   .all_projects_image {

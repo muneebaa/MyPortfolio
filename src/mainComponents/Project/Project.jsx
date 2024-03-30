@@ -18,7 +18,8 @@ const projectsArr = [
     title: "Neverleft (Web and Mobile App(React Native))",
     link: "https://www.neverleft.co.uk/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiamolestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,quia.",
+      "This is a coat hanger management system It has 2 mobile apps one venue app and one user app. Implemented Stripe payment method and barcode scanne",
+    technologies: [" Next JS", "React Native", "Stripe"],
     type: "rtl",
     page: 1,
   },
@@ -27,8 +28,9 @@ const projectsArr = [
     serialNumber: "02",
     title: "Funnelshero",
     link: "https://www.perspective.co/",
+    technologies: [" Next JS", "Craft Js", "Stripe"],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiamolestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,quia.",
+      "This website is a clone of perspective.io in which I created a builder using craft js and a user can create a funnel by dragging and dropping components",
     type: "ltr",
     page: 1,
   },
@@ -37,8 +39,7 @@ const projectsArr = [
     serialNumber: "03",
     title: "Blockcircle",
     link: "https://blockcircle.com/",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiamolestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,quia.",
+    description: "This website shows differennt charts, dashboards.",
     type: "rtl",
     page: 1,
   },
@@ -48,7 +49,7 @@ const projectsArr = [
     title: "Hello PTO",
     link: "https://www.neverleft.co.uk/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiamolestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,quia.",
+      "It is a parent teacher management system that every school can provide",
     type: "rtl",
     page: 2,
   },
@@ -56,9 +57,9 @@ const projectsArr = [
     image: project5,
     serialNumber: "05",
     title: "Champions Choice",
-    link: "https://www.perspective.co/",
+    // link: "https://www.perspective.co/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiamolestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,quia.",
+      "It's a staking app. I have used Firebase push notifications to send user notifications and Firebase dynamic links, meta app events",
     type: "ltr",
     page: 2,
     mobile: true,
@@ -67,42 +68,42 @@ const projectsArr = [
     image: project6,
     serialNumber: "06",
     title: "Countries",
-    link: "https://blockcircle.com/",
+    link: "https://muneeba-dilawaze-rest-countries-api-react.netlify.app/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiamolestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,quia.",
+      "This Project was a challenge from Frontend-Mentor, which is made by rest countries API displays all the countries in the world It has a theme switch and search countries option.",
     type: "rtl",
     page: 2,
   },
   {
     image: project7,
-    serialNumber: "04",
-    title: "Hello PTO",
-    link: "https://www.neverleft.co.uk/",
+    serialNumber: "07",
+    title: "Picsome",
+    link: "https://muneeba-dilawaze-pic-some-app-react.netlify.app/#/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiamolestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,quia.",
+      "This Projects is made by fetching data from self created json file. It has a favorite pic property and add to cart property",
     type: "rtl",
     page: 3,
   },
-  {
-    image: project7,
-    serialNumber: "05",
-    title: "Champions Choice",
-    link: "https://www.perspective.co/",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiamolestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,quia.",
-    type: "ltr",
-    page: 3,
-  },
-  {
-    image: project7,
-    serialNumber: "06",
-    title: "Countries",
-    link: "https://blockcircle.com/",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiamolestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,quia.",
-    type: "rtl",
-    page: 3,
-  },
+  // {
+  //   image: project7,
+  //   serialNumber: "05",
+  //   title: "Champions Choice",
+  //   link: "https://www.perspective.co/",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiamolestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,quia.",
+  //   type: "ltr",
+  //   page: 3,
+  // },
+  // {
+  //   image: project7,
+  //   serialNumber: "06",
+  //   title: "Countries",
+  //   link: "https://blockcircle.com/",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitiamolestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,quia.",
+  //   type: "rtl",
+  //   page: 3,
+  // },
 ];
 
 const Project = () => {
@@ -124,7 +125,8 @@ const Project = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
+  // https://muneebaa.github.io/BBQ-page-responsive-css/
+  // https://muneebaa.github.io/blog-life-responsive-css/recent-posts.html
   return (
     <div id="project">
       <div className="hidden_div"></div>
@@ -132,7 +134,7 @@ const Project = () => {
         <h1 className="project_main_heading">
           My <span className="text_bold">Projects</span>
         </h1>
-        <div>
+        <div className="project_wrapper">
           {projectsArr
             .filter((j) => j.page === currentPage)
             .map((item) => (
@@ -176,7 +178,9 @@ const Project = () => {
                 </div>
               </div>
             ))}
-          <Pagination totalPages={3} onPageChange={handlePageChange} />
+          <div className="project_pagination">
+            <Pagination totalPages={3} onPageChange={handlePageChange} />
+          </div>
         </div>
       </div>
     </div>
