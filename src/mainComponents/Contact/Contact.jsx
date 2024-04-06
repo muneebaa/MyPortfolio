@@ -21,6 +21,11 @@ const Contact = () => {
     from_email: "",
     message: "",
   });
+  const [error, setError] = useState({
+    from_name: "",
+    from_email: "",
+    message: "",
+  });
   const notifySuccess = () => toast.success("Wohoo! Email sent successfully.");
   const notifyError = (err) => toast.error(err);
 
@@ -55,12 +60,22 @@ const Contact = () => {
         );
     } else {
       setLoading(false);
+      // if (!data.from_name) {
+      setError((prevState) => ({
+        ...prevState,
+        from_name: !data.from_name ? "fill data" : "",
+        from_email: !data.from_email ? "fill data" : "",
+        message: !data.message ? "fill data" : "",
+      }));
+      // }
+
       notifyError("Fill all fields to send email");
     }
   };
   useEffect(() => {
     console.log("data", data);
   }, [data]);
+
   return (
     <div id="contact">
       <div className="hidden_div"></div>
@@ -69,13 +84,6 @@ const Contact = () => {
           Get in <span className="text_bold">Touch with me</span>
         </h1>
         <div className="contact_main_wrapper">
-          {/* <form ref={form} className="contact_section1">
-            <input type="text" placeholder="Your name" />
-            <input type="text" placeholder="Email" />
-            <textarea type="text" placeholder="How can I help?*" />
-            <button onClick={(e) => sendEmail(e)}>Get In Touch</button>
-          </form> */}
-
           <form ref={form} className="contact_section1">
             <label>Name</label>
             <input
@@ -83,26 +91,57 @@ const Contact = () => {
               name="from_name"
               value={data.from_name}
               placeholder="John Doe"
-              onChange={(e) =>
+              onChange={(e) => {
                 setData((prevState) => ({
                   ...prevState,
                   from_name: e.target.value,
-                }))
-              }
+                }));
+                const fullNamePattern =
+                  /^[A-Za-z\s]+$/.test(e.target.value) &&
+                  e.target.value.trim().length >= 2;
+                console.log("sssss-s-----s-s-s--", fullNamePattern);
+                setError((prevState) => ({
+                  ...prevState,
+                  from_name: fullNamePattern,
+                }));
+              }}
             />
+            {data.from_name !== "" && (
+              <div>
+                {!error.from_name && (
+                  <span style={{ color: "red", fontSize: 12, marginTop: 5 }}>
+                    Invalid full name.
+                  </span>
+                )}
+              </div>
+            )}
+
             <label>Email</label>
             <input
               type="email"
               value={data.from_email}
               name="from_email"
-              onChange={(e) =>
+              onChange={(e) => {
                 setData((prevState) => ({
                   ...prevState,
                   from_email: e.target.value,
-                }))
-              }
+                }));
+
+                const emailFormat =
+                  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+                setError((prevState) => ({
+                  ...prevState,
+                  from_email: !emailFormat.test(e.target.value),
+                }));
+              }}
               placeholder="john.doe@gmail.com"
             />
+            {!data.from_email && error.from_email && (
+              <span style={{ color: "red", fontSize: 12, marginTop: 5 }}>
+                Invalid email.
+              </span>
+            )}
             <label>Message</label>
             <textarea
               name="message"
@@ -115,6 +154,11 @@ const Contact = () => {
                 }))
               }
             />
+            {!data.message && error.message && (
+              <span style={{ color: "red", fontSize: 12, marginTop: 5 }}>
+                Message can not be empty
+              </span>
+            )}
             <div
               onClick={() => sendEmail()}
               className="contact_submit_btn"
