@@ -49,6 +49,7 @@
   resize: none;
   margin-top: 8px;
   height: 200px;
+  outline: none;
 }
 
 .contact_section1 .contact_submit_btn {

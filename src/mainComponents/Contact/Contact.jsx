@@ -1,14 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Footer from "../../commonComponents/Footer/Footer";
 import emailjs from "@emailjs/browser";
-import {
-  Audio,
-  Discuss,
-  FidgetSpinner,
-  LineWave,
-  MutatingDots,
-  Puff,
-} from "react-loader-spinner";
+import { Puff } from "react-loader-spinner";
 import { toast } from "react-toastify";
 import "./style.css";
 import "react-toastify/dist/ReactToastify.css";
@@ -31,7 +24,6 @@ const Contact = () => {
 
   const sendEmail = () => {
     setLoading(true);
-
     if (data.from_email && data.from_name && data.message) {
       console.log("asdas--", form.current);
       emailjs
@@ -60,16 +52,12 @@ const Contact = () => {
         );
     } else {
       setLoading(false);
-      // if (!data.from_name) {
       setError((prevState) => ({
         ...prevState,
-        from_name: !data.from_name ? "fill data" : "",
-        from_email: !data.from_email ? "fill data" : "",
-        message: !data.message ? "fill data" : "",
+        from_name: !data.from_name ? "Name can not be empty" : "",
+        from_email: !data.from_email ? "Email can not be empty" : "",
+        message: !data.message ? "Message can not be empty" : "",
       }));
-      // }
-
-      notifyError("Fill all fields to send email");
     }
   };
   useEffect(() => {
@@ -99,22 +87,25 @@ const Contact = () => {
                 const fullNamePattern =
                   /^[A-Za-z\s]+$/.test(e.target.value) &&
                   e.target.value.trim().length >= 2;
-                console.log("sssss-s-----s-s-s--", fullNamePattern);
+
                 setError((prevState) => ({
                   ...prevState,
-                  from_name: fullNamePattern,
+                  from_name:
+                    e.target.value === ""
+                      ? "Full name can nont be empty"
+                      : !fullNamePattern
+                      ? "Invalid full name"
+                      : "",
                 }));
               }}
             />
-            {data.from_name !== "" && (
-              <div>
-                {!error.from_name && (
-                  <span style={{ color: "red", fontSize: 12, marginTop: 5 }}>
-                    Invalid full name.
-                  </span>
-                )}
-              </div>
-            )}
+            <div>
+              {error.from_name && (
+                <span style={{ color: "red", fontSize: 12, marginTop: 5 }}>
+                  {error.from_name}
+                </span>
+              )}
+            </div>
 
             <label>Email</label>
             <input
@@ -134,14 +125,28 @@ const Contact = () => {
                   ...prevState,
                   from_email: !emailFormat.test(e.target.value),
                 }));
+
+                setError((prevState) => ({
+                  ...prevState,
+                  from_email:
+                    e.target.value === ""
+                      ? "Email can nont be empty"
+                      : !emailFormat.test(e.target.value)
+                      ? "Invalid email"
+                      : "",
+                }));
               }}
               placeholder="john.doe@gmail.com"
             />
-            {!data.from_email && error.from_email && (
-              <span style={{ color: "red", fontSize: 12, marginTop: 5 }}>
-                Invalid email.
-              </span>
-            )}
+
+            <div>
+              {error.from_email && (
+                <span style={{ color: "red", fontSize: 12, marginTop: 5 }}>
+                  {error.from_email}
+                </span>
+              )}
+            </div>
+
             <label>Message</label>
             <textarea
               name="message"
@@ -154,9 +159,9 @@ const Contact = () => {
                 }))
               }
             />
-            {!data.message && error.message && (
+            {error.message && (
               <span style={{ color: "red", fontSize: 12, marginTop: 5 }}>
-                Message can not be empty
+                {error.message}
               </span>
             )}
             <div
